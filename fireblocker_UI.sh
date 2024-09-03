@@ -46,19 +46,19 @@ while true; do
             case ${OPTIONS[$SELECTED]} in
                 "Start Fireblocker")
                     echo "Starting Fireblocker..."
-                    sudo ./fireblocker.sh start
+                    sudo bash fireblocker.sh start
                     ;;
                 "Stop Fireblocker")
                     echo "Stopping Fireblocker..."
-                    sudo ./fireblocker.sh stop
+                    sudo bash fireblocker.sh stop
                     ;;
                 "Run Low-Intensity Scan")
                     echo "Running Low-Intensity Scan..."
-                    sudo ./fireblocker.sh scan-low
+                    sudo bash fireblocker.sh scan-low
                     ;;
                 "Run Deep Scan")
                     echo "Running Deep Scan..."
-                    sudo ./fireblocker.sh scan-deep
+                    sudo bash fireblocker.sh scan-deep
                     ;;
                 "Exit")
                     exit 0
